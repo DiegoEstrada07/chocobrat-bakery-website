@@ -1,0 +1,507 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 500px;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+
+header {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    padding: 10px 40px;
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    color: #4A1D1F;
+}
+/* Header navigation */
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+    gap: 40px;
+}
+
+header nav img {
+    height: 30px; 
+}
+
+header nav ul {
+    display: flex;
+    gap: 25px; 
+}
+
+header nav ul a {
+    padding: 5px 0;
+    transition: color 0.3s;
+    color: #4A1D1F; 
+    font-size: 16px;
+}
+
+header nav ul a:hover {
+    color: #9C5833;
+}
+
+header nav ul a.currant {
+    font-weight: bold;
+    color: #9C5833; 
+}
+
+/* Drop down categories */
+
+#categories-li {
+    position: relative; 
+}
+
+#categories-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    min-width: 150px;
+    padding: 10px 0;
+    margin-left: inherit;
+    border-radius: 15px;
+}
+
+#categories-li:hover #categories-menu {
+    display: block; 
+}
+
+#categories-menu li {
+    padding: 5px 15px;
+    white-space: nowrap;
+}
+
+/* Search menu */
+header form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #9C5833;
+    border-radius: 3px;
+    height: 40px; 
+    overflow: hidden;
+}
+
+header form input[type="search"] {
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    height: 100%;
+    width: 200px; 
+    box-sizing: border-box; 
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: #B4B4B4;
+    
+}
+
+header form button[type="submit"] {
+    background-color: #4A1D1F;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 0;
+    line-height: 1;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* User & Cart btn */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.header-actions a {
+    font-size: 24px;
+    position: relative;
+    color: #4A1D1F;
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-actions a .material-symbols-outlined {
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* Units cart content */
+.header-actions .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: #4A1D1F;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 5px;
+    line-height: 1;
+    min-width: 10px; 
+    text-align: center;
+}
+
+/* Main content */
+
+.backgroud{
+    background: linear-gradient(to right, #fffefc, #fef7eb);
+}
+
+.mainContent {
+    padding: 60px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
+.title {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.title h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #4a2c2a;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.subtitle {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.subtitle h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6d6d6d;
+    line-height: 1.8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.mainButtons {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    gap: 20px;
+}
+
+.orderNow a {
+    display: inline-block;
+    background: #4a2c2a;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border: 1px solid #4a2c2a;
+
+}
+
+.orderNow a:hover {
+    background: #6d4c41;
+}
+
+.seeMenu a {
+    display: inline-block;
+    background: transparent;
+    color: #4a2c2a;
+    padding: 15px 40px;
+    border: 1px solid #4a2c2a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.seeMenu a:hover {
+    background: #4a2c2a;
+    color: white;
+}
+
+.mainImage {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImage img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+    transform: translateX(15%);
+}
+
+.carousel-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: -1;
+    margin-right: 10px;
+    margin-left: 40px;
+    gap: 7px;
+    font-size: 14px;
+    color: #4a2c2a;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.carousel-counter .material-symbols-outlined {
+    cursor: pointer;
+    font-size: 28px;
+    transition: color 0.3s;
+}
+
+.carousel-counter .material-symbols-outlined:hover {
+    color: #6d4c41;
+}
+
+.carousel-counter .current {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.carouselImg {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carouselImg img {
+    width: 230px;
+    height: 129px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.carouselImg img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu Gallery */
+.menu-gallery {
+    padding-top: 5rem; 
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Espaço entre o título/descrição e os cards */
+}
+        
+
+.menu-gallery-title {
+    display: flex;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.menu-gallery-title h2 {
+    font-size: 56px;
+    color: #4a2c2a;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-left: 80px;
+    flex-basis: 50%; /* Ocupa cerca de 35% da largura */
+    /* padding-left: 100px; */
+}
+
+/* vertical line */
+.divider {
+    position: absolute;
+    top: 130%;
+    left: 45%;
+    transform: translateY(-50%);
+    border: none;
+    border-left: 1px solid #4A1D1F;
+    height: 110px;
+    margin: 0;
+}
+
+
+.menu-gallery-title p {
+    font-size: 20px;
+    color: #272727;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-right: 20px;
+    flex-basis: 65%;
+    padding-left: 50px;
+}
+        
+.products-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 40px;
+    align-items: start;
+    margin-left: 80px;
+    transform: translateX(5%);
+
+
+}
+
+/* Estilo para cada card de produto */
+.products-gallery > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 450px;
+    box-sizing: border-box;
+    width: 231px;
+    border-radius: 30px;
+
+}
+
+.products-gallery > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.products-gallery img {
+    width: 100%;
+    height: 328px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+
+}
+
+.product-name {
+    font-size: 20px;
+    color: #272727;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.rate-stars {
+    color: #FFA903;
+    display: flex;
+    gap: 2px;
+    font-size: 20px; 
+}
+#rate-note{
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estrela preenchida (FILL=1) */
+.rate-stars .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: 20px;
+}
+
+
+.menu-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #4A1D1F;
+    justify-content: center;
+    max-width: 202px;
+    height: 50px;
+    border: 1px solid #4a2c2a;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 16px;  
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    gap: 8px;
+    transform: translatex(250%);
+
+
+}
+
+.menu-btn a {
+    text-decoration: none;
+
+}
+
+.menu-btn .material-symbols-outlined {
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.menu-btn:hover {
+    background: #4a2c2a;
+    color: white;
+}

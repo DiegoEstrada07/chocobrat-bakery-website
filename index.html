@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols (ícones) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav aria-label="primary navigation">
+            <a href="#">
+                <img src="./images/logo.png" alt="Chocobrat logo"></a>
+            <ul>
+                <li><a href="#" class="currant">Home</a></li>
+                <li id="categories-li">
+                    <a href=#>Categories</a>
+                    <ul id="categories-menu">
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">Cheesecakes</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Pies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <form action="/search" method="get" role="search">
+            <label for="site-search" class="sr-only">Buscar no site
+            </label>
+            <input type="search" id="site-search" name="q" placeholder="Search">
+            <button type="submit">
+                <span class="material-symbols-outlined">search</span> 
+            </button>
+        </form>
+        <div class="header-actions">
+            <a href="#">
+                <span class="material-symbols-outlined">person</span>
+            </a>
+    
+            <a href="#">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <span class="cart-count">2</span>
+            </a> 
+        </div>
+    </header>
+    <div class="backgroud">
+        <div class="mainContent">
+            <div class="highlight">
+                <div class="title">
+                    <h1>Bring you Happiness<br>through a piece of cake</h1>
+                </div>
+                <div class="subtitle">
+                    <h3>We make Diffrent type of cakes, chocolate, <br>soft cookies, cheesecake pie or anything<br>you want.</h3>
+                </div>
+                <div class="mainButtons">
+                    <div class="orderNow">
+                        <a href="#">Order Now</a>
+                    </div>
+                    <div class="seeMenu">
+                        <a href="#">See All Menus</a>
+                    </div>
+                </div>
+                <div class="mainImage">
+                    <img src="./images/mainImage.png" alt="Main Image">
+                </div>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-counter">
+                    <span class="material-symbols-outlined">arrow_left_alt</span>
+                    <span class="current">01</span>/<span class="total">12</span>
+                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                </div>
+                <div class="carouselImg">
+                    <img src="./images/gallery1.png" id="photo-gallery" alt="cake-photo-gallery">
+                    <img src="./images/gallery2.png" id="photo-gallery" alt="pie-photo-gallery">
+                    <img src="./images/gallery3.png" id="photo-gallery" alt="cookie-photo-gallery">
+                </div>
+            </div>
+        </div>
+        <div class="menu-gallery">
+            <div class="menu-gallery-title">
+                <h2>Try Our Best Selling</h2>
+                <!-- divider line -->
+                <hr class="divider">
+                <p>Here’s our best creations that everyone loves. Lightness and<br>
+                    sweetness of the cake make you want more and more. Start<br>
+                    from cake, bread and other creations.
+                </p>
+            </div>
+            <div class="products-gallery">
+                <div class="product-1-menu">
+                    <img src="./images/menu-img-1.png" id="cake-menu-img" alt="cake-photo-menu">
+                    <span class="product-name">Red Velvet & Cream<br>Cheese (500g)</span>
+                    <div class="rate-stars">
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span id= rate-note>4.0 Rating</span>
+                    </div>
+                </div>
+                <div class="product-2-menu">
+                    <img src="./images/menu-img-2.png" id="cake-menu-img" alt="pie-photo-menu">
+                    <span class="product-name">Red Velvet & Cream<br>Cheese (500g)</span>
+                    <div class="rate-stars">
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span id= rate-note>4.0 Rating</span>
+                    </div>
+                </div>
+                <div class="product-3-menu">
+                    <img src="./images/menu-img-3.png" id="cake-menu-img" alt="cookie-photo-menu">
+                    <span class="product-name">Red Velvet & Cream<br>Cheese (500g)</span>
+                    <div class="rate-stars">
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span id= rate-note>4.0 Rating</span>
+                    </div>
+                </div>
+                <div class="product-4-menu">
+                    <img src="./images/menu-img-4.png" id="cake-menu-img" alt="cheesecake-photo-menu">
+                    <span class="product-name">Red Velvet & Cream<br>Cheese (500g)</span>
+                    <div class="rate-stars">
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span id= rate-note>4.0 Rating</span>
+                    </div>
+                </div>
+                <div class="product-5-menu">
+                    <img src="./images/menu-img-5.png" id="cake-menu-img" alt="cupcake-photo-menu">
+                    <span class="product-name">Red Velvet & Cream<br>Cheese (500g)</span>
+                    <div class="rate-stars">
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span class="material-symbols-outlined">star_rate</span>
+                        <span id= rate-note>4.0 Rating</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="menu-btn">View More
+                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
