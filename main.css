@@ -16,6 +16,7 @@
 
 .baker-description{
     margin: 20px;
+    margin-bottom: 150px;
 }
 
 #description-1{
@@ -27,7 +28,7 @@
 #baker-image1{
     width: 500px;
     height: auto;
-    margin-left: 100px;
+    margin-left: 350px;
 }
 
 .p-baker{
@@ -51,14 +52,17 @@
     width: 100%;
     background-color: #FDF9ED;
     text-align: center;
-    height: 200px;
+    padding-top: 75px;
+    height: 350px;
 }
 
 #a-contact{
+    display: inline-block;
     color: white;
     border-style: solid;
     border-color: #4A1D1F;
     padding:10px;
+    margin-top: 15px;
     background-color: #4A1D1F;
     text-decoration: none;
 }
@@ -131,12 +135,10 @@
 .role {
     display: inline-block;
     margin: 0;
-    background: #DFF0FF;
-    border: 1px solid #8CC6FF;
     padding: 6px 14px;
     border-radius: 6px;
     font-size: 14px;
-    color: #0073E6;
+
 }
 
 .dots {
